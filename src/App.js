@@ -9,6 +9,7 @@ function App() {
       <main>
         <RouterConfig />
       </main>
+      Hello World!
     </div>
   );
 }
