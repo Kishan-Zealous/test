@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+header{
+  background: linear-gradient(to bottom,rgb(13, 240, 172),rgb(6, 112, 80));
+}
+header a{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover{
+  color: #000;
+}
+.active{
+  border-bottom: 1px solid;
+  background: #000;
+  color: rgb(13, 240, 172);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.active:hover{
+  color: rgb(13, 240, 172);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin:0 auto;
+  max-width: 95%;
+}
+
+.navbar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  height: 80px;
+}
+
+.links{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 150px;
+  max-width: 150px;
+  height: 100%;
+  transition: all 0.7s;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Signup form */
+
+main .container{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signup{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap:10%;
+  color: #fff;
+  background: linear-gradient(to bottom,rgb(80, 95, 91),rgb(16, 17, 17));
+  padding-block:20px ;  
+  border-radius: 10px;
+  width: 80%;
+}
+.signup-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  gap:3%;
+  padding: 10px;
+  width: 80%
+}
+.signup-form .input-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap:5%;
+  margin-block: 10px;
+}
+
+.signup-form .form-inputs{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap:10px;
+}
+
+.form-inputs input{
+
+  color: #fff;
+  border:none;
+  border-radius: 5px;
+  padding-inline: 10px;
+  padding-block:5px;
+  font-weight: 600;
+  outline: none;
+  background-color: rgba(153, 245, 217, 0.3);
+  width: 100%;
+}
+.form-inputs label{
+  font-size: 18px;
+  font-weight: 600;
+}
+.signup-form .address{
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+
+.signup-form .personal-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form h2{
+  border-bottom: 1px solid;
+}
+
+.signup-form .btn-signup{
+  border: none;
+  color: #fff;
+  background: linear-gradient(to bottom,rgb(13, 240, 172),rgb(6, 112, 80));
+  width: 100px;
+  height: 40px;
+  justify-self: flex-end;
+  align-self: flex-end;
+  border-radius: 5px;
+
 }
